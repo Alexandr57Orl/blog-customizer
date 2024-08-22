@@ -28,7 +28,7 @@ export const ArticleParamsForm = ({ appState }: ArticleParamsFormProps) => {
 	const formRef = React.useRef<HTMLDivElement>(null);
 
 	React.useEffect(() => {
-		!isArowMenuOpen;
+		if (!isArowMenuOpen) return;
 
 		const handleClickInOut = (evt: MouseEvent) => {
 			if (formRef.current && !formRef.current.contains(evt.target as Node)) {
