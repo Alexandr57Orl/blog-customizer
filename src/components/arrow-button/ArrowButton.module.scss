@@ -10,7 +10,19 @@
 	height: 100px;
 	background-color: #000000;
 	border-right: 1px;
-	transition: transform 0.5s ease;
+	transition: all 0.5s ease;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #ffc802;
+		transition: all 0.5s ease;
+	}
+
+	&:active {
+		cursor: pointer;
+		background-color: #787878;
+		transition: all 0.5s ease;
+	}
 }
 
 .container_open {
@@ -23,6 +35,7 @@
 	height: 48px;
 	transform: rotate(180deg);
 	transition: transform 0.5s ease;
+	color: orange;
 }
 
 .arrow_open {
